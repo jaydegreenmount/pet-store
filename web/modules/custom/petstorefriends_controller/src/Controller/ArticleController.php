@@ -8,7 +8,7 @@ class ArticleController {
 //Rendering the page of controller
     public function page() {
 
-        //Creating the 'items' array for article items
+//Creating the 'items' array for article items
         $items = array(
             array('name' => 'Article one'),
             array('name' => 'Article two'),
