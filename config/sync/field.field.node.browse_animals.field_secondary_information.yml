@@ -1,0 +1,22 @@
+uuid: 8cf2f00e-d647-4cec-821b-536029867351
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_secondary_information
+    - node.type.browse_animals
+  module:
+    - text
+id: node.browse_animals.field_secondary_information
+field_name: field_secondary_information
+entity_type: node
+bundle: browse_animals
+label: 'secondary information'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

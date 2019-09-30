@@ -1,0 +1,79 @@
+uuid: f8b4ba29-1797-452b-8df4-76a905049497
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.browse_animals.body
+    - field.field.node.browse_animals.field_a
+    - field.field.node.browse_animals.field_browse_animals
+    - field.field.node.browse_animals.field_button
+    - field.field.node.browse_animals.field_image
+    - field.field.node.browse_animals.field_information
+    - field.field.node.browse_animals.field_read_more_link
+    - field.field.node.browse_animals.field_secondary_information
+    - field.field.node.browse_animals.field_select_animal
+    - image.style.animal_image_150x150
+    - node.type.browse_animals
+  module:
+    - ds
+    - image
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - field_image
+        - field_a
+        - node_link
+    fields:
+      node_link:
+        plugin_id: node_link
+        weight: 2
+        label: hidden
+        formatter: default
+id: node.browse_animals.teaser
+targetEntityType: node
+bundle: browse_animals
+mode: teaser
+content:
+  field_a:
+    type: text_default
+    weight: 1
+    region: ds_content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    type: image
+    weight: 0
+    region: ds_content
+    label: hidden
+    settings:
+      image_style: animal_image_150x150
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_browse_animals: true
+  field_button: true
+  field_information: true
+  field_read_more_link: true
+  field_secondary_information: true
+  field_select_animal: true
+  links: true

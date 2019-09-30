@@ -1,0 +1,38 @@
+uuid: 75069ea1-151a-4b17-81fd-d994133ddc92
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - node.type.browse_animals
+  module:
+    - image
+id: node.browse_animals.field_image
+field_name: field_image
+entity_type: node
+bundle: browse_animals
+label: 'Image of animal'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: 25MB
+  max_resolution: 2400x2400
+  min_resolution: 300x300
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

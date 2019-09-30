@@ -1,0 +1,21 @@
+uuid: b6c52f24-1762-426c-ba01-961db0c3580b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_a
+    - node.type.browse_animals
+  module:
+    - text
+id: node.browse_animals.field_a
+field_name: field_a
+entity_type: node
+bundle: browse_animals
+label: 'Animal name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

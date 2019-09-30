@@ -1,0 +1,69 @@
+uuid: ae6ea5a3-da4f-44ea-8e4b-62a9ccd32156
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero
+    - field.field.block_content.hero.field_button
+    - field.field.block_content.hero.field_hero_1600x500
+    - field.field.block_content.hero.field_on_sale_now
+    - image.style.hero_1600x500
+  module:
+    - ds
+    - image
+    - link
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes: {  }
+        wrappers:
+          content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+    regions:
+      content:
+        - field_hero_1600x500
+        - field_on_sale_now
+        - field_button
+id: block_content.hero.default
+targetEntityType: block_content
+bundle: hero
+mode: default
+content:
+  field_button:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 10
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_hero_1600x500:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: hero_1600x500
+      image_link: content
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_on_sale_now:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

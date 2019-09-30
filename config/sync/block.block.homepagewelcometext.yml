@@ -1,0 +1,31 @@
+uuid: b42eb5a4-9a6a-4c0c-b9ff-be2592709c09
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:text_block:4e621299-1dd3-4af8-8873-f45526c702ef'
+  module:
+    - block_content
+    - system
+  theme:
+    - pet_store
+id: homepagewelcometext
+theme: pet_store
+region: highlighted
+weight: 0
+provider: null
+plugin: 'block_content:4e621299-1dd3-4af8-8873-f45526c702ef'
+settings:
+  id: 'block_content:4e621299-1dd3-4af8-8873-f45526c702ef'
+  label: 'homepage welcome text'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /homepage
+    negate: false
+    context_mapping: {  }

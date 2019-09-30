@@ -1,0 +1,24 @@
+uuid: 5a5debfb-f90b-4c31-810d-d231ea734099
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.custom_footer
+    - field.storage.block_content.field_slogan
+  module:
+    - text
+id: block_content.custom_footer.field_slogan
+field_name: field_slogan
+entity_type: block_content
+bundle: custom_footer
+label: slogan
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'All you need is love and treats…lots of treats.'
+    format: basic_html
+default_value_callback: ''
+settings: {  }
+field_type: text

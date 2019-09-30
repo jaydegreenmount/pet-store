@@ -1,0 +1,24 @@
+uuid: f9ddd691-c4ec-4092-917d-ea9c256105df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_browse_animals
+    - node.type.browse_animals
+  module:
+    - text
+id: node.browse_animals.field_browse_animals
+field_name: field_browse_animals
+entity_type: node
+bundle: browse_animals
+label: 'Browse Animals'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'Browse Animals'
+    format: basic_html
+default_value_callback: ''
+settings: {  }
+field_type: text

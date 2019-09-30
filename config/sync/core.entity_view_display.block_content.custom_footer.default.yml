@@ -1,0 +1,33 @@
+uuid: 24bbda15-e359-41e2-bb28-1b1d755c84cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.custom_footer
+    - field.field.block_content.custom_footer.field_logo
+    - field.field.block_content.custom_footer.field_slogan
+  module:
+    - image
+    - text
+id: block_content.custom_footer.default
+targetEntityType: block_content
+bundle: custom_footer
+mode: default
+content:
+  field_logo:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_slogan:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

@@ -1,0 +1,25 @@
+uuid: 34c33ad2-7dfa-4107-9bf2-60c8ec65fd72
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:button:a2a49306-b553-4f86-9362-59cba6602d23'
+  module:
+    - block_content
+  theme:
+    - pet_store
+id: buttonblockdisplay
+theme: pet_store
+region: footer
+weight: -9
+provider: null
+plugin: 'block_content:a2a49306-b553-4f86-9362-59cba6602d23'
+settings:
+  id: 'block_content:a2a49306-b553-4f86-9362-59cba6602d23'
+  label: 'Button block display'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

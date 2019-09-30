@@ -1,0 +1,20 @@
+uuid: 18511f6c-fd9d-4b12-963d-5f93f878f82e
+langcode: en
+status: false
+dependencies:
+  theme:
+    - pet_store
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: pet_store_local_actions
+theme: pet_store
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

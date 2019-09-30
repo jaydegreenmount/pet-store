@@ -1,0 +1,30 @@
+uuid: 842fe933-0150-40e6-ae24-a848abdabd6a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.animal_news_article
+  module:
+    - system
+    - views
+  theme:
+    - pet_store
+id: views_block__animal_news_article_block_1
+theme: pet_store
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:animal_news_article-block_1'
+settings:
+  id: 'views_block:animal_news_article-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /homepage
+    negate: false
+    context_mapping: {  }

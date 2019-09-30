@@ -1,0 +1,21 @@
+uuid: ba56ff56-e229-4378-b052-d2987daf647f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_animal_news_article_title
+    - node.type.animal_news_articles
+  module:
+    - text
+id: node.animal_news_articles.field_animal_news_article_title
+field_name: field_animal_news_article_title
+entity_type: node
+bundle: animal_news_articles
+label: 'Animal news article title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,22 @@
+uuid: fba0b2dd-a85f-494c-9521-3090b428a101
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.animal_news_articles
+  module:
+    - text
+id: node.animal_news_articles.body
+field_name: body
+entity_type: node
+bundle: animal_news_articles
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

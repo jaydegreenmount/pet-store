@@ -1,0 +1,31 @@
+uuid: 5e83d231-25b0-4999-afc4-49950af78033
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:hero:00d915ce-2184-4367-a367-10d669999cc9'
+  module:
+    - block_content
+    - system
+  theme:
+    - pet_store
+id: homepagehero
+theme: pet_store
+region: highlighted
+weight: 0
+provider: null
+plugin: 'block_content:00d915ce-2184-4367-a367-10d669999cc9'
+settings:
+  id: 'block_content:00d915ce-2184-4367-a367-10d669999cc9'
+  label: 'homepage hero'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /homepage
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,30 @@
+uuid: 8f2beb31-e953-4c89-9021-155dc8cf0836
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_select_animal
+field_name: field_select_animal
+entity_type: node
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 1
+      label: Dog
+    -
+      value: 2
+      label: Ant
+    -
+      value: 3
+      label: Cat
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

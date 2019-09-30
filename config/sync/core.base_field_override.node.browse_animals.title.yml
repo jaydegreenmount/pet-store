@@ -1,0 +1,18 @@
+uuid: b55c7dec-07bf-49a5-b5d6-97e408eaaf89
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.browse_animals
+id: node.browse_animals.title
+field_name: title
+entity_type: node
+bundle: browse_animals
+label: 'Browse Animals'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

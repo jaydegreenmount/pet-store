@@ -1,0 +1,21 @@
+uuid: e7644da9-8aa2-41a6-9024-0bfa1e48d238
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_select_animal
+    - node.type.browse_animals
+  module:
+    - options
+id: node.browse_animals.field_select_animal
+field_name: field_select_animal
+entity_type: node
+bundle: browse_animals
+label: 'Select Animal'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

@@ -1,0 +1,14 @@
+uuid: 07660e1f-c6f0-4298-8e9c-43c65344354c
+langcode: en
+status: true
+dependencies: {  }
+name: hero_1600x500
+label: hero-1600x500
+effects:
+  b03536ed-256c-4de3-a20b-83ef829222ef:
+    uuid: b03536ed-256c-4de3-a20b-83ef829222ef
+    id: image_resize
+    weight: 1
+    data:
+      width: 1600
+      height: 500

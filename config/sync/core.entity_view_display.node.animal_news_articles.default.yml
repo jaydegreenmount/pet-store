@@ -1,0 +1,87 @@
+uuid: 50275f85-ca8b-4fa3-8b22-5091ec3a8225
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.animal_news_articles.body
+    - field.field.node.animal_news_articles.field_animal_news_article_title
+    - field.field.node.animal_news_articles.field_button
+    - field.field.node.animal_news_articles.field_image
+    - field.field.node.animal_news_articles.field_page_
+    - image.style.hero_1600x500
+    - node.type.animal_news_articles
+  module:
+    - ds
+    - image
+    - link
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      content:
+        - field_animal_news_article_title
+        - field_image
+        - node_post_date
+        - links
+        - body
+        - field_button
+    fields:
+      node_post_date:
+        plugin_id: node_post_date
+        weight: 2
+        label: hidden
+        formatter: ds_post_date_long
+id: node.animal_news_articles.default
+targetEntityType: node
+bundle: animal_news_articles
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_animal_news_article_title:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_button:
+    weight: 5
+    label: hidden
+    settings:
+      trim_length: 10
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: hero_1600x500
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_page_: true

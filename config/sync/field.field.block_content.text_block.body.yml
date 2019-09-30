@@ -1,0 +1,26 @@
+uuid: 65c7c7ca-e71d-473f-b55e-7ea4aab8572d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.text_block
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.text_block.body
+field_name: body
+entity_type: block_content
+bundle: text_block
+label: Body
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    summary: ''
+    value: "<p>The Internet King? I wonder if he could provide faster nudity…</p>\r\n\r\n<p>Your guilty consciences may make you vote Democratic, but secretly you all yearn for a Republican president to lower taxes, brutalize criminals, and rule you like a king! They only come out in the night. Or in this case, the day.</p>\r\n\r\n<p>I'll be back. You can't keep the Democrats out of the White House forever, and when they get in, I'm back on the streets, with all my criminal buddies. Remember the time he ate my goldfish?&nbsp;<strong>And you lied and said I never had goldfish.</strong>&nbsp;<em>Then why did I have the bowl, Bart?</em>&nbsp;*Why did I have the bowl?</p>\r\n\r\n<h4>You don't win friends with salad.</h4>\r\n\r\n<p>Weaseling out of things is important to learn. It's what separates us from the animals…except the weasel. That's why I love elementary school, Edna. The children believe anything you tell them. This is the greatest case of false advertising I've seen since I sued the movie \"The Never Ending Story.</p>\r\n"
+    format: basic_html
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

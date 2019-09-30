@@ -1,0 +1,38 @@
+uuid: 04942234-3ae9-452e-9664-2d7d9aaf616f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero
+    - field.storage.block_content.field_hero_1600x500
+  module:
+    - image
+id: block_content.hero.field_hero_1600x500
+field_name: field_hero_1600x500
+entity_type: block_content
+bundle: hero
+label: hero-1600x500
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: 32MB
+  max_resolution: 1700x600
+  min_resolution: 1000x300
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

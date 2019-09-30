@@ -1,0 +1,22 @@
+uuid: e98cedc4-44d6-4b4e-b41e-2c64e60b2199
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - pet_store
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: pet_store_powered
+theme: pet_store
+region: header
+weight: -3
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

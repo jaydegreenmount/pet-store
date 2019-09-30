@@ -1,0 +1,14 @@
+uuid: 5386c28e-1eed-49e9-812b-954d82422193
+langcode: en
+status: true
+dependencies: {  }
+name: pet_news_150x150
+label: pet-news-150x150
+effects:
+  08a9389d-e9b0-479b-9772-478e64da4726:
+    uuid: 08a9389d-e9b0-479b-9772-478e64da4726
+    id: image_resize
+    weight: 1
+    data:
+      width: 150
+      height: 150

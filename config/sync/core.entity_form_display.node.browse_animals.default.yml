@@ -1,0 +1,113 @@
+uuid: ccd4da7e-fc5b-41fa-8558-d9a273f269af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.browse_animals.body
+    - field.field.node.browse_animals.field_a
+    - field.field.node.browse_animals.field_browse_animals
+    - field.field.node.browse_animals.field_button
+    - field.field.node.browse_animals.field_image
+    - field.field.node.browse_animals.field_information
+    - field.field.node.browse_animals.field_read_more_link
+    - field.field.node.browse_animals.field_secondary_information
+    - field.field.node.browse_animals.field_select_animal
+    - image.style.thumbnail
+    - node.type.browse_animals
+  module:
+    - image
+    - link
+    - text
+id: node.browse_animals.default
+targetEntityType: node
+bundle: browse_animals
+mode: default
+content:
+  body:
+    weight: 3
+    settings:
+      rows: 9
+      placeholder: 'Type of animal'
+      summary_rows: 3
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_a:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_browse_animals:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: 'Browse Animals'
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_button:
+    weight: 6
+    settings:
+      placeholder_url: Button
+      placeholder_title: Button
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_image:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_information:
+    weight: 5
+    settings:
+      rows: 9
+      placeholder: 'This pet is great for people who...'
+      summary_rows: 3
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_read_more_link:
+    weight: 9
+    settings:
+      placeholder_url: 'Read more'
+      placeholder_title: 'Read More'
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_secondary_information:
+    weight: 4
+    settings:
+      rows: 9
+      placeholder: 'Care instructions'
+      summary_rows: 3
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_select_animal:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: 'Browse Animals'
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

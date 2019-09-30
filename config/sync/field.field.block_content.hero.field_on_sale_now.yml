@@ -1,0 +1,24 @@
+uuid: e0d843df-4d1e-4458-839e-797794ebb7ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero
+    - field.storage.block_content.field_on_sale_now
+  module:
+    - text
+id: block_content.hero.field_on_sale_now
+field_name: field_on_sale_now
+entity_type: block_content
+bundle: hero
+label: 'on sale now'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'Goldfish now on sale'
+    format: basic_html
+default_value_callback: ''
+settings: {  }
+field_type: text

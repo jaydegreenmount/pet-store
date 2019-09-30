@@ -1,0 +1,24 @@
+uuid: 2d4c1ab1-efd2-4e82-bcd1-4a9f162f0c5e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_
+    - node.type.animal_news_articles
+  module:
+    - text
+id: node.animal_news_articles.field_page_
+field_name: field_page_
+entity_type: node
+bundle: animal_news_articles
+label: 'page title'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'Pet News'
+    format: basic_html
+default_value_callback: ''
+settings: {  }
+field_type: text

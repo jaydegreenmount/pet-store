@@ -1,0 +1,23 @@
+uuid: ea50cca4-97f9-476e-bc78-63333a401751
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_button
+    - node.type.browse_animals
+  module:
+    - link
+id: node.browse_animals.field_button
+field_name: field_button
+entity_type: node
+bundle: browse_animals
+label: Button
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 1
+  title: 1
+field_type: link

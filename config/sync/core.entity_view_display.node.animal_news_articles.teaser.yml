@@ -1,0 +1,82 @@
+uuid: fd8bde44-a26c-4efa-aa36-a54ee27da51e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.animal_news_articles.body
+    - field.field.node.animal_news_articles.field_animal_news_article_title
+    - field.field.node.animal_news_articles.field_button
+    - field.field.node.animal_news_articles.field_image
+    - field.field.node.animal_news_articles.field_page_
+    - image.style.pet_news_150x150
+    - node.type.animal_news_articles
+  module:
+    - ds
+    - image
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col_fluid
+      library: ds/ds_2col_fluid
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          left: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      left:
+        - field_image
+      right:
+        - field_animal_news_article_title
+        - body
+        - node_post_date
+    fields:
+      node_post_date:
+        plugin_id: node_post_date
+        weight: 3
+        label: hidden
+        formatter: ds_post_date_medium
+id: node.animal_news_articles.teaser
+targetEntityType: node
+bundle: animal_news_articles
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_trimmed
+    weight: 2
+    settings:
+      trim_length: 50
+    third_party_settings: {  }
+    region: right
+  field_animal_news_article_title:
+    type: text_trimmed
+    weight: 1
+    region: right
+    label: hidden
+    settings:
+      trim_length: 20
+    third_party_settings: {  }
+  field_image:
+    type: image
+    weight: 0
+    region: left
+    label: hidden
+    settings:
+      image_style: pet_news_150x150
+      image_link: content
+    third_party_settings: {  }
+hidden:
+  field_button: true
+  field_page_: true
+  links: true

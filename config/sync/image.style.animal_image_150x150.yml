@@ -1,0 +1,14 @@
+uuid: bf1ab182-a3d4-40fd-a690-5b0a2b58bc99
+langcode: en
+status: true
+dependencies: {  }
+name: animal_image_150x150
+label: Animal-image-250x250
+effects:
+  2c406afb-7878-4ac5-b321-ac527e05b6ea:
+    uuid: 2c406afb-7878-4ac5-b321-ac527e05b6ea
+    id: image_resize
+    weight: 1
+    data:
+      width: 250
+      height: 250

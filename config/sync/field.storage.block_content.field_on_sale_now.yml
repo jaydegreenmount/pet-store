@@ -1,0 +1,20 @@
+uuid: 6c0aa527-d2b9-4cb5-8fb0-8a26f3fa63c1
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - text
+id: block_content.field_on_sale_now
+field_name: field_on_sale_now
+entity_type: block_content
+type: text
+settings:
+  max_length: 20
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

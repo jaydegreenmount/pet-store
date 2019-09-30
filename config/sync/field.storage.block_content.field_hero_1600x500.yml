@@ -1,0 +1,30 @@
+uuid: 11628114-b36f-42f9-8ce7-e9cd00f3c5a5
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - file
+    - image
+id: block_content.field_hero_1600x500
+field_name: field_hero_1600x500
+entity_type: block_content
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: f3ebe725-ed10-474b-9789-dbde842e0dd0
+    alt: hero
+    title: ''
+    width: 1180
+    height: 360
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

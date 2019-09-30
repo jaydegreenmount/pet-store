@@ -1,0 +1,42 @@
+uuid: b917b56a-a924-4157-9072-18d40cba6fc8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.custom_footer
+    - field.field.block_content.custom_footer.field_logo
+    - field.field.block_content.custom_footer.field_slogan
+    - image.style.thumbnail
+  module:
+    - image
+    - text
+id: block_content.custom_footer.default
+targetEntityType: block_content
+bundle: custom_footer
+mode: default
+content:
+  field_logo:
+    weight: 27
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_slogan:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

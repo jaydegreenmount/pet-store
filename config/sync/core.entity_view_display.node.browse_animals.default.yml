@@ -1,0 +1,113 @@
+uuid: 5f4962c2-dffd-4297-b570-c190fd441395
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.browse_animals.body
+    - field.field.node.browse_animals.field_a
+    - field.field.node.browse_animals.field_browse_animals
+    - field.field.node.browse_animals.field_button
+    - field.field.node.browse_animals.field_image
+    - field.field.node.browse_animals.field_information
+    - field.field.node.browse_animals.field_read_more_link
+    - field.field.node.browse_animals.field_secondary_information
+    - field.field.node.browse_animals.field_select_animal
+    - node.type.browse_animals
+  module:
+    - ds
+    - image
+    - link
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col_stacked
+      library: ds/ds_2col_stacked
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          header: div
+          left: div
+          right: div
+          footer: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      left:
+        - node_title
+        - field_image
+      right:
+        - body
+      footer:
+        - field_secondary_information
+        - field_information
+        - field_button
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
+        settings:
+          wrapper: h2
+          class: Animal-Name
+          link: false
+id: node.browse_animals.default
+targetEntityType: node
+bundle: browse_animals
+mode: default
+content:
+  body:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: right
+  field_button:
+    weight: 5
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: footer
+  field_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: left
+  field_information:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: footer
+  field_secondary_information:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: footer
+hidden:
+  field_a: true
+  field_browse_animals: true
+  field_read_more_link: true
+  field_select_animal: true
+  links: true

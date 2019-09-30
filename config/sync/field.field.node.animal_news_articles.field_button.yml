@@ -1,0 +1,23 @@
+uuid: d1b4be0e-fec5-4ee1-8b5e-70505954a70c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_button
+    - node.type.animal_news_articles
+  module:
+    - link
+id: node.animal_news_articles.field_button
+field_name: field_button
+entity_type: node
+bundle: animal_news_articles
+label: Button
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 1
+  title: 1
+field_type: link

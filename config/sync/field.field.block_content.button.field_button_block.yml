@@ -1,0 +1,28 @@
+uuid: 8452c64c-d492-4ecd-a87d-03cdb69dc016
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.button
+    - field.storage.block_content.field_button_block
+  module:
+    - link
+id: block_content.button.field_button_block
+field_name: field_button_block
+entity_type: block_content
+bundle: button
+label: 'Button block'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'internal:/Learn more'
+    title: 'Learn more'
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 1
+  title: 1
+field_type: link

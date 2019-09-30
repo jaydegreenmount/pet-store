@@ -1,0 +1,22 @@
+uuid: 8a021435-80a8-4799-9e2c-4e88a48ef714
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - pet_store
+_core:
+  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
+id: pet_store_search
+theme: pet_store
+region: sidebar_first
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

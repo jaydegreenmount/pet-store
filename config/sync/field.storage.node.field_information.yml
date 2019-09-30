@@ -1,0 +1,19 @@
+uuid: e1ddc935-e74c-444c-a17e-3d8eece5fefe
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_information
+field_name: field_information
+entity_type: node
+type: text_with_summary
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

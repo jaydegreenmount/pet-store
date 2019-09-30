@@ -1,0 +1,22 @@
+uuid: 454ffd78-0151-4b9d-aaee-ff86d0051de0
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - pet_store
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: pet_store_messages
+theme: pet_store
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }
