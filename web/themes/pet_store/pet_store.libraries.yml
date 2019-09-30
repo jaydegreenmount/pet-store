@@ -1,0 +1,20 @@
+pet_store:
+  omega:
+    allow_clone_for_subtheme: true
+    allow_enable_disable: true
+    title: 'Default library for the pet_store theme'
+    description: 'Default Omega subtheme library description. Please provide a more meaningful description (and title) for this library by editing the pet_store.libraries.yml file.'
+    scss: 
+      style/css/pet_store.css: 'style/scss/pet_store.scss'
+  version: VERSION
+  js:
+    js/pet_store.js: {}
+  css:
+    theme:
+      style/scss/vendor/dist/main.js: {}
+    layout: 
+     style/scss/vendor/dist/css/main.css: {}
+    component:
+      #style/css/components/some-component.css: {}
+  dependencies:
+    - core/jquery

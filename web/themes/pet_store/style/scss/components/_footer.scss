@@ -1,0 +1,21 @@
+//Footer
+
+//BEM
+.footer{
+
+    &__footer-nav {
+        margin: auto;
+        background: $spoon;
+        text-align: center;
+    }
+}
+
+
+//Drupal Selectors
+.footer-layout {
+    @extend .footer__footer-nav;
+
+    .menu {
+        @extend .footer__footer-nav;
+    }
+}

@@ -1,0 +1,39 @@
+//Animal news
+
+//BEM
+.animal-card {
+
+    &__img {
+          // branding styles go in here.  
+   }
+
+}
+
+
+
+//Drupal Selectors News Page
+.region--content {
+
+
+  //@extend .cards__color;
+
+  .view-content {
+    @include duk-island;
+    @extend .cards__spacing;
+
+  }
+
+  .views-row {
+    // @extend .cards__spacing;
+  }
+
+  .image-style-pet-news-150x150 {
+    @extend .cards__left;
+    background: black;
+
+  }
+
+  .group-right {
+    @extend .cards__right;
+  }
+}

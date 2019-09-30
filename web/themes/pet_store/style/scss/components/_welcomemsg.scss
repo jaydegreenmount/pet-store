@@ -1,0 +1,16 @@
+//Welcome Block
+
+///BEM
+.welcome {
+
+  &__text {
+    text-align: center;
+    display: inline-block
+  }
+
+}
+
+.welcome-div {
+  @extend .welcome__text;
+  background: $greenyblue;
+}

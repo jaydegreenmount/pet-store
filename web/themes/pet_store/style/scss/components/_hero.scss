@@ -1,0 +1,41 @@
+//Hero
+
+///BEM
+.hero {
+
+    &__button {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+    }
+
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+    
+    &__tagline {
+        display: none;
+    }
+
+}
+
+
+//Drupal Selectors
+.region-highlighted {
+
+    .field--name-field-button {
+        @extend .button--tertiary;
+        @extend .hero__button;
+
+    }
+
+    .field--name-field-on-sale-now {
+        @extend .hero__tagline; 
+    }
+
+    img {
+        @extend .hero__img; 
+    }
+
+}

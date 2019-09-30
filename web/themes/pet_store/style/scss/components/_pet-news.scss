@@ -1,0 +1,47 @@
+//Pet News
+
+///BEM
+.news {
+
+  &__spacing {
+    padding: 1rem;
+  }
+
+  &__right {
+    float: right;
+  }
+
+  &__left {
+    background: pink;
+    margin-left: 20%;
+    align-content: space-evenly;
+  }
+
+}
+
+
+#block-views-block-animal-news-article-block-1 {
+
+}
+
+  //Drupal Selectors News Page
+.view-animal-news-article  {
+
+  .view-content {
+    @include duk-island;
+    @extend .news__spacing;
+  }
+
+  .views-row {
+    // @extend .cards__spacing;
+  }
+
+  .image-style-pet-news-150x150 {
+    @extend .news__left;
+
+  }
+
+  .group-right {
+    @extend .news__right;
+  }
+}

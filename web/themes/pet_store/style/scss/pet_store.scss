@@ -1,0 +1,25 @@
+//// Default Variable Import
+//
+///* SAMPLE SCSS FILE CONTENTS */
+//
+//// Import doghouse uikit
+//@import "vendor/scss/duk";
+//
+////Import Custom Settings
+//@import "settings/colors";
+//@import "settings/fonts";
+//
+////Import Custom Component files
+//@import "components/*";
+//@import "components/homepage-newsblock";
+//@import "components/browse-animals";
+//@import "components/footer";
+//@import "components/header";
+//@import "components/hero";
+//@import "components/pet-news";
+//@import "components/welcomemsg";
+//@import "components/homepage-browse-animals";
+
+body {
+  background: purple;
+}

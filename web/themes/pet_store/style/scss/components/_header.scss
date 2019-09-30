@@ -1,0 +1,25 @@
+//Header
+
+//BEM
+.main-navigation {
+
+    &__branding {
+        background: $spoon;
+
+    }
+
+}
+
+//Drupal Selectors
+.region-header {
+
+    @extend .main-navigation__branding;
+
+    .menu {
+        @include duk-position(absolute, top right 1em);
+    }
+
+    a {
+        color: black;
+    }
+}
