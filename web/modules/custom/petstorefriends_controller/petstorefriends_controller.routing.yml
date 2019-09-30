@@ -1,0 +1,7 @@
+petstorefriends_controller.article_list:
+  path: 'petstorefriends/blog'
+  defualt:
+    _controller: '\Drupal\petstorefriends_controller\Controller\ArticleController::page'
+    _title: 'Pet Store Friends Blog'
+  requirements:
+    _permission: 'access content'
